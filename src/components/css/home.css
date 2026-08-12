@@ -1,0 +1,972 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    padding: 80px;
+
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+    width: 100%;
+    margin: 40px auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 80px;
+    padding: 70px;
+
+    border-radius: 32px;
+
+    background: linear-gradient(
+        135deg,
+        #ffffff 0%,
+        #cbdff3 100%
+    );
+
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.hero-content {
+    max-width: 550px;
+    flex: 1;
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 8px 16px;
+
+    background: rgba(4, 102, 165, .08);
+    color: #0466a5;
+
+    border-radius: 50px;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.hero h1 {
+    margin-top: 24px;
+
+    font-size: 64px;
+    line-height: 1.1;
+    font-weight: 700;
+
+    color: #111;
+}
+
+.hero p {
+    margin-top: 24px;
+
+    font-size: 20px;
+    line-height: 1.7;
+
+    color: #666;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 16px;
+
+    margin-top: 40px;
+}
+
+.primary-btn,
+.secondary-btn {
+    height: 56px;
+    padding: 0 32px;
+
+    border-radius: 16px;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .25s;
+}
+
+.primary-btn {
+    border: none;
+
+    background: #0466a5;
+    color: white;
+}
+
+.primary-btn:hover {
+    background: #03598f;
+}
+
+.secondary-btn {
+    background: white;
+
+    color: #0466a5;
+
+    border: 2px solid #0466a5;
+}
+
+.secondary-btn:hover {
+    background: #0466a5;
+    color: white;
+}
+
+.hero-image {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 0;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 300px;
+
+    object-fit: contain;
+
+    transition: .3s;
+}
+
+.hero-image img:hover {
+    transform: scale(1.03);
+}
+
+
+/* =========================================================
+   CATEGORIES
+========================================================= */
+
+.buttons-block {
+    display: grid;
+
+    grid-template-columns: repeat(6, 1fr);
+
+    gap: 20px;
+}
+
+.buttons-block .btn-null {
+    width: 100%;
+    height: 200px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 25px;
+
+    padding: 20px;
+
+    border-radius: 20px;
+
+    box-sizing: border-box;
+
+    cursor: pointer;
+}
+
+.buttons-block .btn-null strong {
+    color: var(--text);
+
+    font-size: 18px;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   ADVANTAGES
+========================================================= */
+
+.flex-ai_c-jc_sb {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.flex-ai_c-jc_sb > .block {
+    flex: 1;
+}
+
+.block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 40px;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    background: linear-gradient(
+        135deg,
+        #ffffff 0%,
+        #cbdff3 100%
+    );
+
+    box-sizing: border-box;
+}
+
+.block .right {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+
+    line-height: 30px;
+}
+
+.block .right h1 {
+    color: var(--text);
+}
+
+.block .right p {
+    font-size: 20px;
+}
+
+
+/* =========================================================
+   NEW PRODUCTS
+========================================================= */
+
+/* =========================================================
+   NEW PRODUCTS
+========================================================= */
+
+.new-product {
+    width: 100%;
+    min-width: 0;
+}
+
+.new-product > h1 {
+    margin-bottom: 20px;
+    color: var(--text);
+}
+
+.new-product > .flex-jc_sb {
+    display: grid;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    gap: 20px;
+
+    height: auto !important;
+
+    min-width: 0;
+}
+
+
+/* PRODUCT CARD */
+
+.new-product .block {
+    width: 100%;
+    min-width: 0;
+
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 20px;
+
+    padding: 30px;
+
+    box-sizing: border-box;
+
+    background: var(--white);
+
+    border: 2px solid var(--gray);
+    border-radius: 20px;
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+}
+
+.new-product .block:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+}
+
+
+/* IMAGE */
+
+.new-product .block .img {
+    width: 100%;
+    min-height: 250px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+.new-product img {
+    width: 250px;
+    max-width: 100%;
+
+    height: auto;
+
+    object-fit: contain;
+}
+
+
+/* TEXT */
+
+.new-product .block .text {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+
+    width: 100%;
+}
+
+.new-product .block h2 {
+    color: var(--text);
+
+    font-size: 22px;
+    line-height: 1.25;
+
+    margin: 0;
+}
+
+.new-product .block p {
+    color: var(--text);
+
+    font-size: 18px;
+
+    margin: 0;
+
+    opacity: .7;
+}
+
+
+/* PRICE */
+
+.new-product .block > h1 {
+    color: var(--text);
+
+    font-size: 28px;
+
+    margin: 0;
+}
+
+
+/* BUTTONS */
+
+.new-product .block .btns {
+    display: flex;
+
+    width: 100%;
+
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 15px;
+
+    margin-top: auto;
+}
+.products-slider {
+    display: grid;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    gap: 20px;
+
+    width: 100%;
+
+    min-width: 0;
+}
+
+
+/* =========================================================
+   MAILING
+========================================================= */
+
+.mailing {
+    display: grid;
+
+    grid-template-columns: auto 1fr 1fr auto;
+
+    align-items: center;
+
+    gap: 40px;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    background: linear-gradient(
+        135deg,
+        #ffffff 0%,
+        #cbdff3 100%
+    );
+
+    box-sizing: border-box;
+}
+
+.mailing .right {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+
+    line-height: 30px;
+}
+
+.mailing .right h1 {
+    color: var(--text);
+}
+
+.mailing .right p {
+    font-size: 20px;
+}
+
+.mailing-input {
+    width: 100%;
+
+    padding: 20px 30px;
+
+    background: var(--white);
+
+    border: 2px solid var(--gray);
+
+    border-radius: 15px;
+
+    box-sizing: border-box;
+}
+
+.mailing-input input {
+    width: 100%;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    font-size: 18px;
+
+    color: var(--text);
+}
+
+.mailing-button {
+    padding: 20px 30px;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1200px) {
+
+    .home {
+        padding: 70px 40px;
+    }
+
+    .hero {
+        padding: 50px;
+        gap: 40px;
+    }
+
+    .hero h1 {
+        font-size: 52px;
+    }
+
+    .buttons-block {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .new-product > .flex-jc_sb {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .flex-ai_c-jc_sb {
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .flex-ai_c-jc_sb > .block {
+        width: 100%;
+    }
+
+    .mailing {
+        grid-template-columns: auto 1fr;
+
+        gap: 25px;
+    }
+
+    .mailing-input {
+        grid-column: 1 / 2;
+    }
+
+    .mailing-button {
+        grid-column: 2 / 3;
+        grid-row: 2;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .home {
+        gap: 20px;
+
+        padding: 70px 15px 30px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        flex-direction: column-reverse;
+
+        text-align: center;
+
+        gap: 25px;
+
+        padding: 35px 20px;
+
+        margin: 15px auto;
+
+        border-radius: 24px;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero h1 {
+        margin-top: 18px;
+
+        font-size: 36px;
+
+        line-height: 1.15;
+    }
+
+    .hero p {
+        margin-top: 18px;
+
+        font-size: 16px;
+
+        line-height: 1.5;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+
+        gap: 10px;
+
+        margin-top: 25px;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        width: 100%;
+
+        height: 52px;
+
+        padding: 0 20px;
+    }
+
+    .hero-image img {
+        width: 220px;
+    }
+
+
+    /* CATEGORIES */
+
+    .buttons-block {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 10px;
+    }
+
+    .buttons-block .btn-null {
+        height: 150px;
+
+        gap: 15px;
+
+        padding: 15px;
+    }
+
+    .buttons-block .btn-null svg {
+        width: 55px;
+        height: 55px;
+    }
+
+    .buttons-block .btn-null strong {
+        font-size: 15px;
+    }
+
+
+    /* ADVANTAGES */
+
+    .flex-ai_c-jc_sb {
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+    .flex-ai_c-jc_sb > .block {
+        width: 100%;
+
+        justify-content: flex-start;
+
+        gap: 20px;
+
+        padding: 25px 20px;
+
+        border-radius: 18px;
+    }
+
+    .flex-ai_c-jc_sb > .block svg {
+        flex-shrink: 0;
+
+        width: 60px;
+        height: 60px;
+    }
+
+    .block .right {
+        gap: 8px;
+
+        line-height: 22px;
+    }
+
+    .block .right h1 {
+        font-size: 20px;
+    }
+
+    .block .right p {
+        font-size: 15px;
+
+        line-height: 1.5;
+    }
+
+
+    /* PRODUCTS */
+
+    .new-product {
+        width: 100%;
+
+        /* Очень важно */
+        min-width: 0;
+        overflow: hidden;
+    }
+
+    .new-product > h1 {
+        font-size: 28px;
+
+        margin-bottom: 15px;
+    }
+    .products-slider {
+        display: flex;
+
+        width: 100%;
+
+        gap: 12px;
+
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        padding: 0 2px 15px;
+
+        box-sizing: border-box;
+
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+
+        -webkit-overflow-scrolling: touch;
+
+        scrollbar-width: none;
+
+        overscroll-behavior-x: contain;
+    }
+
+    .products-slider::-webkit-scrollbar {
+        display: none;
+    }
+
+    .products-slider > .block {
+        flex: 0 0 calc(100% - 45px);
+
+        min-width: calc(100% - 45px);
+
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
+    }
+    /* =========================
+       HORIZONTAL SCROLL
+    ========================= */
+
+    .new-product > .flex-jc_sb {
+        display: flex;
+
+        width: 100%;
+
+        gap: 12px;
+
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        /*
+         * Чтобы первый элемент не обрезался
+         */
+        padding: 0 2px 15px;
+
+        box-sizing: border-box;
+
+        /*
+         * Плавный свайп
+         */
+        scroll-behavior: smooth;
+
+        /*
+         * Фиксация карточек
+         */
+        scroll-snap-type: x mandatory;
+
+        /*
+         * На iPhone
+         */
+        -webkit-overflow-scrolling: touch;
+
+        /*
+         * Не даём браузеру пытаться
+         * скроллить страницу вместо блока
+         */
+        overscroll-behavior-x: contain;
+
+        /*
+         * Скрываем scrollbar
+         */
+        scrollbar-width: none;
+    }
+
+    .new-product > .flex-jc_sb::-webkit-scrollbar {
+        display: none;
+    }
+
+
+    /* =========================
+       PRODUCT CARD
+    ========================= */
+
+    .new-product .block {
+        /*
+         * Самое важное свойство
+         */
+        flex: 0 0 calc(100% - 45px);
+
+        width: calc(100% - 45px);
+
+        min-width: calc(100% - 45px);
+        max-width: calc(100% - 45px);
+
+        box-sizing: border-box;
+
+        padding: 20px;
+
+        gap: 15px;
+
+        border-radius: 18px;
+
+        /*
+         * Первая карточка начинается
+         * ровно от начала контейнера
+         */
+        scroll-snap-align: start;
+
+        scroll-snap-stop: always;
+    }
+
+
+    /* =========================
+       IMAGE
+    ========================= */
+
+    .new-product .block .img {
+        width: 100%;
+
+        min-height: 210px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .new-product img {
+        width: 210px;
+        max-width: 90%;
+
+        height: auto;
+    }
+
+
+    /* =========================
+       TEXT
+    ========================= */
+
+    .new-product .block h2 {
+        font-size: 20px;
+
+        line-height: 1.25;
+    }
+
+    .new-product .block p {
+        font-size: 15px;
+    }
+
+
+    /* =========================
+       PRICE
+    ========================= */
+
+    .new-product .block > h1 {
+        font-size: 25px;
+    }
+
+
+    /* =========================
+       BUTTONS
+    ========================= */
+
+    .new-product .block .btns {
+        gap: 10px;
+    }
+
+
+    /* MAILING */
+
+    .mailing {
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        text-align: center;
+
+        gap: 15px;
+
+        padding: 30px 20px;
+
+        border-radius: 20px;
+    }
+
+    .mailing .icon {
+        display: flex;
+
+        justify-content: center;
+
+        margin-bottom: 5px;
+    }
+
+    .mailing .icon svg {
+        width: 55px;
+        height: 55px;
+    }
+
+    .mailing .right {
+        gap: 8px;
+    }
+
+    .mailing .right h1 {
+        font-size: 23px;
+
+        line-height: 1.3;
+    }
+
+    .mailing .right p {
+        font-size: 15px;
+    }
+
+    .mailing-input {
+        padding: 15px 18px;
+
+        border-radius: 12px;
+    }
+
+    .mailing-input input {
+        font-size: 16px;
+    }
+
+    .mailing-button {
+        width: 100%;
+
+        padding: 15px;
+
+        font-size: 16px;
+    }
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .home {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .hero {
+        padding: 30px 15px;
+    }
+
+    .hero h1 {
+        font-size: 31px;
+    }
+
+    .hero-image img {
+        width: 190px;
+    }
+
+    .buttons-block {
+        gap: 8px;
+    }
+
+    .buttons-block .btn-null {
+        height: 135px;
+    }
+
+    .buttons-block .btn-null strong {
+        font-size: 14px;
+    }
+
+    .new-product .block {
+        flex-basis: 90%;
+    }
+}

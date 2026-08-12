@@ -1,0 +1,9 @@
+export default function MailIcon({ size = 87, className = "" }) {
+    return (
+        <svg width="83" height={size} className={className} viewBox="0 0 83 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2.5" y="2.5" width="77.9414" height="57" rx="7.5" stroke="#fff" stroke-width="5"/>
+            <rect width="44.1534" height="5" transform="matrix(0.9192 -0.393791 0.336489 0.941687 39.6836 25.0541)" fill="#fff"/>
+            <rect width="44.0504" height="5" transform="matrix(-0.9192 -0.393791 -0.336489 0.941687 43.0513 25.0558)" fill="#fff"/>
+        </svg>
+    );
+}

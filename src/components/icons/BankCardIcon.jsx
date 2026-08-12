@@ -1,0 +1,9 @@
+export default function BankCardIcon({ size = 87, className = "" }) {
+    return (
+        <svg width="43" height={size} className={className} viewBox="0 0 43 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="40.4199" y="8" width="3" height="37.84" transform="rotate(90 40.4199 8)" fill="#0466A5"/>
+            <rect x="36.1201" y="18" width="3" height="8.6" rx="1.5" transform="rotate(90 36.1201 18)" fill="#0466A5"/>
+            <rect x="1.5" y="1.5" width="40" height="25" rx="3.5" stroke="#0466A5" stroke-width="3"/>
+        </svg>
+    );
+}
